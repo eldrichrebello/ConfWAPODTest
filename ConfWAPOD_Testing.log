@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.20)  20 DEC 2014 21:44
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.20)  22 DEC 2014 20:07
 entering extended mode
 **ConfWAPOD_Testing.tex
 
@@ -314,28 +314,33 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 408.
 
-<DelaySources.pdf, id=13, 564.91031pt x 230.2764pt>
-File: DelaySources.pdf Graphic file (type pdf)
- <use DelaySources.pdf>
-<DSC05446.JPG, id=14, 3083.52pt x 816.04875pt>
+<DSC05446.JPG, id=13, 3083.52pt x 816.04875pt>
 File: DSC05446.JPG Graphic file (type jpg)
  <use DSC05446.JPG>
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 443--445
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 417--419
  [][] 
  []
 
 
-LaTeX Warning: Reference `Reference' on page 2 undefined on input line 465.
-
-
-LaTeX Warning: Reference `Results' on page 2 undefined on input line 482.
+Underfull \hbox (badness 2970) in paragraph at lines 426--427
+ \OT1/ptm/m/it/10 Real-Time Phasor-POD Al-go-rithm: [] \OT1/ptm/m/n/10 The FPGA
+ of a
+ []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 528.
+(Font)              <8> on input line 434.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 528.
+(Font)              <6> on input line 434.
+<DelaySources.pdf, id=14, 564.91031pt x 230.2764pt>
+File: DelaySources.pdf Graphic file (type pdf)
+ <use DelaySources.pdf>
 
-Underfull \hbox (badness 2261) in paragraph at lines 528--529
+LaTeX Warning: Reference `Results' on page 2 undefined on input line 456.
+
+[2 <Z:/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/ArchitectureDeve
+lopment.pdf> <Z:/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/DSC054
+46.JPG>]
+Underfull \hbox (badness 2261) in paragraph at lines 502--503
 \OT1/ptm/m/n/8 able On-line: $http : / / www . nerc . com / pa / rrm / ea / Sys
 tem \OMS/cmsy/m/n/8 n \OT1/ptm/m/n/8 %20Disturbance \OMS/cmsy/m/n/8 n$
  []
@@ -343,12 +348,28 @@ tem \OMS/cmsy/m/n/8 n \OT1/ptm/m/n/8 %20Disturbance \OMS/cmsy/m/n/8 n$
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
-[2 <Z:/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/ArchitectureDeve
-lopment.pdf> <Z:/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/DSC054
-46.JPG>]
-Underfull \hbox (badness 10000) in paragraph at lines 553--554
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
 $\OT1/ptm/m/n/8 sps / examples[]v2 / performance-[]of-[]three-[]pss-[]for-[]int
 erarea-[]oscillations .$
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 535.
+
+(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\psnfss\omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 535.
+
+Underfull \hbox (badness 5667) in paragraph at lines 535--536
+[]\OT1/ptm/m/n/8 SMRT1 Sin-gle Phase Re-lay Test Sys-tem Data Sheet, Avail-
+ []
+
+
+Underfull \hbox (badness 2443) in paragraph at lines 535--536
+\OT1/ptm/m/n/8 able On-line $http : / / www . megger . com / common / documents
+ / SMRT1[]DS[]$
  []
 
 
@@ -362,39 +383,35 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
-
- <Z:/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/DelaySources.pdf>]
-
+[3 <Z:/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/DelaySources.pdf
+>]
 ("Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConfWAPODTest\ConfWAPOD_Testing.
 aux")
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 3295 strings out of 494053
- 50069 string characters out of 3147730
- 117071 words of memory out of 3000000
- 6566 multiletter control sequences out of 15000+200000
- 39346 words of font info for 73 fonts, out of 3000000 for 9000
+ 3320 strings out of 494053
+ 50445 string characters out of 3147730
+ 117099 words of memory out of 3000000
+ 6586 multiletter control sequences out of 15000+200000
+ 42177 words of font info for 76 fonts, out of 3000000 for 9000
  718 hyphenation exceptions out of 8191
- 36i,9n,38p,1785b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,9n,38p,1080b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/enc/dvips/fontname/8r.enc}<C:/PROGRAMS/M
 iKTeX/MiKTeX_2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/PROGRAMS/MiKTeX/
 MiKTeX_2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_
 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/font
-s/type1/public/amsfonts/cm/cmsy7.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/type1
-/public/amsfonts/cm/cmsy8.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/type1/urw/ti
-mes/utmb8a.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/type1/urw/times/utmbi8a.pfb
-><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/type1/urw/times/utmr8a.pfb><C:/PROGRAMS/M
-iKTeX/MiKTeX_2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ConfWAPOD_Testing.pdf (3 pages, 1777384 bytes).
+s/type1/public/amsfonts/cm/cmr8.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/type1/urw/times/utmb
+8a.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/PRO
+GRAMS/MiKTeX/MiKTeX_2.9/fonts/type1/urw/times/utmr8a.pfb><C:/PROGRAMS/MiKTeX/Mi
+KTeX_2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ConfWAPOD_Testing.pdf (3 pages, 1788931 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
+ 175 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

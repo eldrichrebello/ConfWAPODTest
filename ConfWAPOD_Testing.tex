@@ -280,7 +280,7 @@ The goal of this paper is to document the details of the design and construction
 
 
 \subsection{Paper Outline}
-This paper is organised as follows. Section \ref{background} outlines the damping algorithm selected, the controller architecture and introduces the two-area model used. Section \ref{hardware} examines the details of the architecture developed for this controller and the various stages of refinement and changes made to it. Section \ref{Design} presents the results of the Hardware-in-the-loop experiments performed and conclusions are drawn in Section \ref{conclusion}.
+This paper is organised as follows. Section \ref{background} outlines the damping algorithm selected, the controller architecture and introduces the two-area model used. Section \ref{hardware} presents details of the hardware used in the construction of the HIL test. Section \ref{Design} presents the design choices behind the selection of the hardware used. The HIL test and one result from it is presented in Section \ref{HILtest} and conclusions are drawn in Section~\ref{conclusion}.
 
 \section{Background}\label{background}
 
@@ -312,7 +312,7 @@ All the hardware and software detailed in this work is available in the SmarTS L
 Figure \ref{ExperimentOutline} presents the data path and a simplified outline of the entire HIL test conducted. This setup was arrived at after several changes to the design necessitated by limitations of the hardware and software. These are covered in the next section.
 
 \subsection{OPAL-RT Simulator}
-The e\textsc{megasim} real-time simulator from OPAL-RT\cite{OPALemegasim} was the core of the HIL test. The simulator ran the two-area \textsc{Simulink} model in real-time and allowed for interfacing hardware with the model through its analogue input and output terminals.  Details of these terminals are below.
+The e\textsc{megasim}\cite{eMEGASIM} real-time simulator from OPAL-RT\cite{OPALemegasim} was the core of the HIL test. The simulator ran the two-area \textsc{Simulink} model in real-time and allowed for interfacing hardware with the model through its analogue input and output terminals.  Details of these terminals are below.
 
 \begin{itemize}
 \item \textbf{Analogue Outputs} : Number: 32 (+/-16V and +/-10mA)
@@ -336,7 +336,7 @@ Two different cRIO models were used in this particular HIL test. One model, the 
 \subsubsection*{Real-Time Phasor-POD Algorithm} The FPGA of a cRIO9081 was used to run the Phasor-POD algorithm in real-time. Though the cRIO9081 has a real-time controller in addition to the FPGA, the latter was chosen to run the Phasor-POD algorithm. This was because the FPGA runs at 400Mhz and is thus capable of a deterministic response time in the order of nanoseconds. The loop rate chosen was 50$\mu$s so that the data output rate of the FPGA was identical to the read rate on the real-time simulator's input.
 
 \subsection{Analogue Signal Amplifiers}
-The SMRT1 Single Phase Relay Tester \cite{Megger} from Megger was used as an analogue signal amplifier. Each individual amplifier had a single current and single voltage input. To drive the inputs of two PMUs, six amplifier units were required. The inputs to the amplifiers were the low-level analogue signals extracted from the real-time simulator. The outputs of the amplifiers were wired to the analogue input modules of the PMUs. Table \ref{AmplifierTable} lists the ratios used.
+The SMRT1 Single Phase Relay Tester \cite{Megger} from Megger was used as an analogue signal amplifier. Each individual amplifier had a single current and single voltage input. To drive the inputs of two PMUs, six amplifier units were required. The inputs to the amplifiers were the low-level analogue signals extracted from the real-time simulator. The outputs of the amplifiers were wired to the analogue input modules of the PMUs. Table \ref{AmplifierTable} lists the ratios used. To avoid saturation in the amplifiers, the outputs from the real-time simulator were limited to $\pm$10V. 
 
 \begin{table}[!ht]
 \caption{Amplifier Inputs and Outputs}\label{AmplifierTable}
@@ -353,34 +353,36 @@ The SMRT1 Single Phase Relay Tester \cite{Megger} from Megger was used as an ana
 \subsection{Phasor Data Concentrator}
 The Phasor Data Concentrator (PDC) consisted of a network connected desktop computer running PDC software from SEL. The PDC was used to allow for data from multiple synchrophasor streams to be manipulated and used. It also had data logging functionality which was used to analyse the system performance.
 
+\begin{figure*}[!th]
+\centering
+%\label{ExperimentOutline}
+\includegraphics[width=6in]{DelaySources.pdf} 
+\caption{Data path and experiment outling of HIL test. Hardware used is indicated in {\color{red}red} text. Note that two PMUs are use though one is indicated. Section where synchrophasor data is used is indicated with dotted outline.}
+\label{ExperimentOutline}
+\end{figure*}
+
 \section{Hardware Design Choices} \label{Design}
 Figure \ref{ExperimentOutline} shows the final HIL test setup which was used to evaluate the performance of the real-time Phasor-POD algorithm. This design was arrived at after numerous changes to the setup. This section outlines the most significant changes made together with their reasons.
 
-\subsection{Analogue Signal Amplifiers} The initial setup envisaged connecting the analogue outputs of the real-time simulator directly to the inputs of the PMUs. This approach simplified wiring but had to be abandoned due to a poor signal-to-noise ratio. The main reason for this poor signal-to-noise ratio was the fact that a very small portion of the dynamic range of the PMU's input modules was being used. A 0-10V signal was being read by a voltage module rated for 0-300V and a 0-20mA signal was being read by a module rated for 0-5A. This resulted in the POD algorithm producing a large error signal even at steady state. Using an amplified signal as a PMU input greatly improved the signal-to-noise ratio and thus the performance of the Phasor-POD algorithm.
+\subsection{Analogue Signal Amplifiers} The initial setup envisaged connecting the analogue outputs of the real-time simulator directly to the inputs of the PMUs. This approach simplified wiring but had to be abandoned due to a poor signal-to-noise ratio. The main reason for this poor signal-to-noise ratio was the fact that a very small portion of the dynamic range of the PMU's input modules was being used. A 0-10V signal was being read by a voltage module rated for 0-300V and a 0-20mA signal was being read by a module rated for 0-5A. This resulted in the POD algorithm producing a large error signal even at steady state. Using an amplified signal as a PMU input greatly improved the signal-to-noise ratio and thus the performance of the Phasor-POD algorithm. Though the amplifiers greatly improved the signal-to-noise ratio, additional scaling factors were introduced in the simulation and in the PMUs. For instance, the analogue output of the real-time simulator had to be limited in magnitude to avoid problems such as amplifier saturation. Also, CT and PT ratios in the PMUs were used to account for scaling factors in other sections of the HIL test.
 
-\subsection{FPGA} The Phasor-POD algorithm was implemented on the FPGA of the cRIO9081. This was despite the challenges of writing FPGA code and despite the fact that the algorithm could have been run on the real-time section of the controller. Two reasons were behind this choice. One was that the real-time section of the cRIO9081 handles asynchronous TCP/IP communication. This had to be incorporated in a deterministic control loop which would also run the control algorithm. Any delays in the network would result in a delay in output from the control loop which would affect performance. The second problem was that the fastest loop rate that the real-time controller was capable of was 1ms. This was achievable only in ideal conditions. The real-time simulator expected input from the controller every 50$\mu$s, a rate that the real-time controller could not match. By leaving the task of network communication to the real-time controller, the FPGA was used to run the control algorithm together with a sample-and-hold algorithm every 50$\mu$s.
+\subsection{FPGA} The Phasor-POD algorithm was implemented on the FPGA of the cRIO9081. This was despite the challenges of writing FPGA code and despite the fact that the algorithm could have been run on the real-time section of the controller. Two reasons were behind this choice. One was that the real-time section of the cRIO9081 handles asynchronous TCP/IP communication. This had to be incorporated in to a deterministic control loop which would also run the control algorithm. Any delays in the network would result in a delay in output from the control loop which would affect performance. The second problem was that the fastest loop rate that the real-time controller was capable of was 1ms. This was achievable only in ideal conditions. The real-time simulator expected input from the controller every 50$\mu$s, a rate that the real-time controller could not match. By leaving the task of network communication to the real-time controller, the FPGA was used to run the control algorithm together with a sample-and-hold algorithm and produce output every 50$\mu$s.
 
 \subsection{Desktop Computer} An ideal controller would be able to parse the synchrophasor stream, extract measurement data and perform control action autonomously. However, no software was available that could run on the cRIO and parse the synchrophasor stream. Software \cite{SDK} was, however, available that could perform this function on a desktop computer. The solution implemented here thus has a desktop computer running a multi-tasking operating system to extract data from the synchrophasor stream. This data is then sent to the cRIO over the TCP network. In the scenario where data from multiple PMUs is used, computations such as the voltage phase angle difference are performed on this computer.
 
 \section{Hardware-in-the-Loop Test} \label{HILtest}
 
-\begin{figure*}[!ht]
-\centering
-%\label{ExperimentOutline}
-\includegraphics[width=5.5in]{DelaySources.pdf} 
-\caption{Data path in HIL test. Hardware used is indicated in {\color{red}red} text. Note that two PMUs are use though one is indicated.}
-\label{ExperimentOutline}
-\end{figure*}
-
 A setup identical to that outlined in Figure \ref{ExperimentOutline} was constructed and used to verify the working of the hardware WAPOD. As opposed to a simulation, a HIL test has sources of delay and noise. Sources of stochastic delay are indicated in red in Figure \ref{ExperimentOutline}. Signals are extracted from the edges of Area 1 and Area 2 as indicated in Figure \ref{TwoArea} and are sent to two PMUs via analogue amplifiers. The PMUs generate a sychophasor data stream which is sent to a PDC over a TCP network. The PDC time aligns both streams and retransmits them over the same TCP network. The streams are received on a desktop computer running LabView. Here, measurement data is extracted from the streams and is sent to the control algorithm running on the cRIO. The cRIO recieves this data and passes it to the built-in FPGA which runs the Phasor-POD algorithm. The FPGA uses an analogue voltage output module to generate a control signal which is wired back to the real-time simulator. After scaling, this signal is reintroduced in the \textsc{Simulink} model running in real-time.\\
 \begin{figure}[!h]
 %\centering
 %\label{ExperimentOutline}
-\includegraphics[width=3.4in]{SVC_ResponseComparison_Labelled.pdf} 
-\caption{Something}
+\includegraphics[width=3.5in]{SVC_ResponseComparison_Labelled.pdf} 
+\caption{Output (in V) from cRIO running Phasor-POD algorithm, shown in green. Only SVC provides damping action in this case. Black plot indicates ideal response with damping from SVC at mid-point and PSS's at each mahine}
 \label{HILGraph}
 \end{figure}
-Results from the real-time HIL test are presented in Figure~\ref{HILGraph}. The Phasor-POD algorithm running on the cRIO uses active power (outflow from Area 1) as a control input. The inter-area mode is excited at t=2s by momentarily changing the voltage reference of one generator in Area 1 before returning it to normal. As evident in Figure~\ref{HILGraph}, the Phasor-POD algorithm on the cRIO is able to restore the system to stability. As a comparison, the response of the system to the same disturbance but damped by a combination of the generator PSS and the POD (running in \textsc{Simulink}) is shown with the black plot. It is evident that the hardware implementation of the Phasor-POD algorithm is able to damp the inter-area mode and restore the system to stability. It is important to note that the black plot represents system performance with a PSS at each machine in addition to the SCV at the mid-point of the two-area network. In comparison, the green plot represents system performance with the SVC acting as the only damping element. Figure~\ref{HILGraph} is not meant to serve as a comparison but rather, confirmation, that real-time damping can be achieved with commercially available, general purpose controllers.
+Results from the real-time HIL test are presented in Figure~\ref{HILGraph}. The Phasor-POD algorithm running on the cRIO uses active power (outflow from Area 1) as a control input. The inter-area mode is excited at t=2s by momentarily changing the voltage reference of one generator in Area 1 before returning it to normal. As evident in Figure~\ref{HILGraph}, the Phasor-POD algorithm on the cRIO is able to restore the system to stability. As a comparison, the response of the system to the same disturbance but damped by a combination of the generator PSS and the POD (running in \textsc{Simulink}) is shown with the black plot. It is evident that the hardware implementation of the Phasor-POD algorithm is able to damp the inter-area mode and restore the system to stability. It is important to note that the black plot represents system performance with a PSS at each machine in addition to the SCV at the mid-point of the two-area network. In comparison, the green plot represents system performance with the SVC acting as the only damping element. Figure~\ref{HILGraph} is not meant to serve as a comparison but rather, confirmation, that real-time damping can be achieved with commercially available, general purpose controllers.\\
+
+The experimental setup detailed here was designed for testing one particuar algorithm. The setup, however, is modular enough that sections of it can be replaced or removed entirely. The controller used here is based on proprietary hardware and software from National Instruments. The support, documentation and software from National Instruments greatly accelerated the development and testing of this prototype. The authors, however, would like to see similar algorithms run on open hardware platforms such as the Raspberry pi or Arduino.
 
 
 
@@ -454,7 +456,7 @@ M.~Klein, J. G.~Rogers and P.~Kundur \emph{A fundamental study of inter-area osc
 
 \bibitem{SIMULINKOnline} Kamwa \ I. (Hydro-Quebec) "Performance of Three PSS for Interarea Oscillations" Available Online at : \url{http://www.mathworks.se/help/physmod/sps/examples_v2/performance-of-three-pss-for-interarea-oscillations.html}
 
-%\bibitem{eMEGASIM} \emph{eMEGASIM Power Grid Real-Time Digital HArdware in the Loop Simulator} Available Online at : \url{http://www.opal-rt.com/}
+\bibitem{eMEGASIM} \emph{eMEGASIM Power Grid Real-Time Digital HArdware in the Loop Simulator} Available Online at : \url{http://www.opal-rt.com/}
 
 %\bibitem{Dmello} F. P.~Dmello, and C.~Concordia \emph{Concepts of Synchronous Machine Stability as Affected by Excitation Control} IEEE Transactions on Power Apparatus and Systems, vol. PAS 88, no. 4, 1969. 
 

@@ -267,6 +267,10 @@ The phenomenon of intra-area oscillations is well documented and has modern solu
 \subsection{Contributions}
 The goal of this paper is to document the details of the design and construction of a real-time test set-up for a wide-area control system. \"{A}ngquist and Gama's\cite{PhasorPOD} Phasor Power Oscillation (Phasor POD) algorithm was implemented on a Compact Reconfigurable Input-Output controller (cRIO) \cite{cRIO9081} from National Instruments which is then tested with a inputs from a two-area model\cite{KundurTwoArea} running in real-time. The entire physical test set-up is examined together with constraints of the present implementation. The results from one HIL experiment are also presented. This setup can serve as a starting point for future HIL tests that involve real-time, synchrophasor-based controllers.
 
+\subsection*{Note}
+The term 'real-time' as used in this work is identical to the sense as used in the field of embedded control\cite{Real-Time}. Though the power network used here is a simulation, it is run in real-time so any external controller based on inputs from this system would behave in an identical manner when the same inputs are sourced from an actual power network. The clock on both the real-time simulator and on the cRIO controller run as fast as an actual clock. The controller
+designed is thus able to provide feedback control to the power network so as to affect the network at that point in time. Real-time is used to mean that control output generated on the controller is guaranteed to be produced in a fixed time frame. The timing limitations imposed are strict and if any delays occur, the controller is deemed to have failed. 
+
 %\"{A}ngquist and Gama's\cite{PhasorPOD} Phasor Power Oscillation (Phasor POD) algorithm was chosen based on the operational requirements and control system design constraints. The developed prototype is termed a Wide Area Power Oscillation Damper (WAPOD). For purposes of comparison, the real-time \textsc{Simulink} implementation of the Phasor POD algorithm by Almas and Vanfretti \cite{PhasorPODImplement} is used as a benchmark. The performance of the hardware prototype developed will be tested and compared to the performance of this implementation of the algorithm. The two-area four-machine model developed by Klein, Rogers and Kundur \cite{KundurTwoArea} is used as a test-case and is modified to fit the requirements of experimental testing. A Hardware-in-the-loop experiment is constructed around the e\textsc{MEGASIM} real-time simulator from OPAL-RT \cite{OPALemegasim} with the two-area model running in real-time, physical PMUs and a synchrophasor-based Phasor-POD algorithm running on a cRIO (Figure \ref{Data_path}).
 
 
@@ -442,6 +446,8 @@ L. Vanfretti is supported by the STRON$g^{2}$rid project, funded by Nordic Energ
 \bibitem{PhasorPOD} L.~\"{A}ngquist and C.~Gama  \emph{Damping Algorithm based on Phasor Estimation} in Power Engineering Society Winter Meeting, 2001. IEEE, Volume 3, pp. 1160 - 1165  
 
 \bibitem{TaskForce} M.Crow, M. Gibbard, A. Messina, J. Pierre, J. Sanchez-Gasca, D. Trudnowski, D. Vowles \emph{Identification of Electromechanical Modes in Power Systems} IEEE Task Force Report, Special Publication TP462, June2012.
+
+\bibitem{Real-Time} Ben-Ari, M., "Principles of Concurrent and Distributed Programming", Prentice Hall, 1990. ISBN 0-13-711821-X. Ch16, Page 164
 
 \bibitem{PhasorPODImplement} M.~Shoaib Almas and L.~Vanfretti, \emph{Implementation of Conventional PSS and Phasor Based POD for Power Stabilizing Controls for Real-Time Simulation}, IEEE IES IECON14, 29 Oct-1 Nov, 2014, Dallas, USA.
 

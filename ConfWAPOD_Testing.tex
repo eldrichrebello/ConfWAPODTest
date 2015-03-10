@@ -210,27 +210,28 @@
 
 
 \begin{document}
-\title{Experimental Framework for Testing Synchrophasor-based Damping Control Systems}
+\title{An Experimental Setup for Testing Synchrophasor-based Damping Control Systems}
 
 
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
 \author{\IEEEauthorblockN{Eldrich Rebello}
-\IEEEauthorblockA{Kungliga Tekniska h\"{o}gskolan\\
+\IEEEauthorblockA{KTH Royal Institute of Technology\\
 Stockholm, Sweden\\
 Email: rebello@kth.se}
 \thanks{And so on}
 \and
-\IEEEauthorblockN{Luigi Vanfretti}
-\IEEEauthorblockA{Kungliga Tekniska h\"{o}gskolan \\
-Stockholm, Sweden \& Statnett SF, Oslo, Norway\\
-Email: luigi.vanfretti@statnett.no}
-\and
+
 \IEEEauthorblockN{Md. Shoaib Almas}
-\IEEEauthorblockA{Kungliga Tekniska h\"{o}gskolan\\
-Stockholm, Sweden\\
-Email: msalmas@kth.se}
+\IEEEauthorblockA{KTH Royal Institute of Technology\\
+	Stockholm, Sweden\\
+	Email: msalmas@kth.se}
+\and
+\IEEEauthorblockN{Luigi Vanfretti}
+\IEEEauthorblockA{KTH, Stockholm\\
+Statnett SF, Oslo, Norway\\
+Email: luigi.vanfretti@statnett.no}
 }
 
 % make the title area
@@ -239,7 +240,7 @@ Email: msalmas@kth.se}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-Wide-Area Power Oscillation Damping (WAPOD) controllers using IEEE C37.118 data have been proposed, developed and deployed in the field and are showing promise. This paper details the development, construction and implementation of a real-time, Hardware-in-the-loop (HIL) test set-up for such a controller. The set-up is based around the e\textsc{megasim} real-time simulator from OPAL-RT. A general purpose, phasor-based control algorithm is implemented on a Compact Reconfigurable Input/Output (cRIO) controller from National Instruments. The complete, closed-loop set-up, the hardware used and the reasons for design choices are also documented. Since this test-set-up uses IEEE C37.118 data over a TCP/IP network, the complete data path is examined. A test-case HIL test with the designed controller is also presented and the results are examined.
+Prototype Wide-Area Power system Oscillation Damping (WAPOD) controllers using synchrophasor data have been proposed, developed and tested in field demonstration projects and are showing promise. The development process of these control systems has, however been confined to a few specific cases, the details of which have not been thoroughly reported in available literature. This paper details the development, construction and implementation of a real-time, Hardware-in-the-loop (HIL) test set-up for such a controller. A general purpose, phasor-based control algorithm is implemented on a Compact Reconfigurable Input/Output (cRIO) controller from National Instruments. The complete, closed-loop experimental set-up, the hardware used and the rationale behind different design choices are also documented. Because this test-set-up uses IEEE C37.118 data over a TCP/IP network, the complete, real-time data path is examined. An HIL test with the implemented controller is also presented and results are examined.
 
 \end{abstract}
 
@@ -257,7 +258,7 @@ Wide-Area Power Oscillation Damping (WAPOD) controllers using IEEE C37.118 data 
 
 \section{Introduction}
 \subsection{Motivation}
-Instances such as the Northeast blackout of August 2003 and the August 1996 Western North America (WECC)\cite{NAERC} blackout have been significant events on large, interconnected power systems. Both can be attributed, in part, to low frequency, electromechanically induced, inter-area oscillations\cite{NAERC}. These oscillations involve the generators of one synchronous area oscillating against the generators of another area and are typically between 0.1-2Hz in frequency. The fact that these modes are poorly damped\cite{WAPODNorway} presents a danger to power systems with interconnections used for purposes such as power trading. Inter-area oscillations are also a threat to the stability of grids with significant generation coming from renewable energy sources.
+Instances such as the Northeast blackout of August 2003 and the August 1996 Western North America (WECC)\cite{NAERC} blackout have been significantly disruptive events on large, interconnected power systems. Both can be attributed, in part, to low frequency, electromechanically induced, inter-area oscillations\cite{NAERC}. These oscillations involve the generators of one synchronous area oscillating against the generators of another area and are typically between 0.1-2Hz in frequency. The fact that these modes are poorly damped\cite{WAPODNorway} presents a danger to power systems with interconnections used for purposes such as power trading. Inter-area oscillations are also a threat to the stability of grids with significant generation coming from renewable energy sources.
 %The growth of power system interconnections between previously unconnected areas has given rise to the phenomenon of inter-area oscillations. These are low frequency (0.1-2 Hz.) oscillations where the generators of one synchronous area oscillate against those of another area. Damping for these oscillations is generally poor and if they are allowed to grow, they can lead to disconnection of the ties or a collapse of the power system. A famous example of the latter was the August 1996 blackout of the WSCC system in the USA \cite{NAERC}. Although the purpose of system interconnection was to increase stability, the present situation of the power system incorporates renewable energy sources and power trading corridors, both of which impact system stability.
 
 \subsection{Previous Experiences}

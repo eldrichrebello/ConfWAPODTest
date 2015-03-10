@@ -10,11 +10,11 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="585.03125"
+   height="282.1152"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="DelaySources.svg">
   <defs
      id="defs4">
@@ -33,32 +33,35 @@
     <marker
        inkscape:stockid="Arrow1Lend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Lend"
-       style="overflow:visible;">
+       style="overflow:visible">
       <path
          id="path3800"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
-         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lstart"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="Arrow1Lstart"
        style="overflow:visible">
       <path
          id="path3797"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
-         transform="scale(0.8) translate(12.5,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <filter
        id="filter3900"
-       inkscape:collect="always">
+       inkscape:collect="always"
+       color-interpolation-filters="sRGB">
       <feGaussianBlur
          id="feGaussianBlur3902"
          stdDeviation="4.6345313"
@@ -300,9 +303,9 @@
        id="linearGradient7727"
        gradientUnits="userSpaceOnUse"
        x1="182.75586"
-       y1="531.741"
+       y1="531.74103"
        x2="262.95312"
-       y2="531.741" />
+       y2="531.74103" />
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath6901-4-3">
@@ -808,18 +811,22 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="521.44626"
-     inkscape:cy="354.32716"
+     inkscape:cx="74.311671"
+     inkscape:cy="173.7598"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1138"
+     inkscape:window-width="1600"
+     inkscape:window-height="838"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      showguides="true"
-     inkscape:guide-bbox="true" />
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -828,24 +835,15 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
-    <rect
-       style="color:#000000;fill:#d5e5ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.52968037999999995;stroke-dasharray:0, 0;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect3714"
-       width="155.20995"
-       height="63.286057"
-       x="64.346718"
-       y="704.46564"
-       inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
-       inkscape:export-xdpi="200"
-       inkscape:export-ydpi="200" />
+     id="layer1"
+     transform="translate(-51.5,-500.8739)">
     <g
        transform="translate(-42.045321,-226.23966)"
        id="g6673-2">
@@ -1372,7 +1370,7 @@
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 53.272999,509.93315 217.039191,0 0,91.82235 -218.124379,0"
        id="path2989"
        inkscape:connector-curvature="0"
@@ -1585,7 +1583,7 @@
        sodipodi:cy="252.09448"
        sodipodi:rx="3"
        sodipodi:ry="3"
-       d="m 521,252.09448 a 3,3 0 1 1 -6,0 3,3 0 1 1 6,0 z"
+       d="m 521,252.09448 c 0,1.65686 -1.34315,3 -3,3 -1.65685,0 -3,-1.34314 -3,-3 0,-1.65685 1.34315,-3 3,-3 1.65685,0 3,1.34315 3,3 z"
        transform="matrix(0.57845045,0,0,0.57845045,72.54574,409.29178)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
        inkscape:export-xdpi="200"
@@ -1598,7 +1596,7 @@
        sodipodi:cy="252.09448"
        sodipodi:rx="3"
        sodipodi:ry="3"
-       d="m 521,252.09448 a 3,3 0 1 1 -6,0 3,3 0 1 1 6,0 z"
+       d="m 521,252.09448 c 0,1.65686 -1.34315,3 -3,3 -1.65685,0 -3,-1.34314 -3,-3 0,-1.65685 1.34315,-3 3,-3 1.65685,0 3,1.34315 3,3 z"
        transform="matrix(0.57845045,0,0,0.57845045,-11.908038,423.75304)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
        inkscape:export-xdpi="200"
@@ -1611,7 +1609,7 @@
        sodipodi:cy="252.09448"
        sodipodi:rx="3"
        sodipodi:ry="3"
-       d="m 521,252.09448 a 3,3 0 1 1 -6,0 3,3 0 1 1 6,0 z"
+       d="m 521,252.09448 c 0,1.65686 -1.34315,3 -3,3 -1.65685,0 -3,-1.34314 -3,-3 0,-1.65685 1.34315,-3 3,-3 1.65685,0 3,1.34315 3,3 z"
        transform="matrix(0.57845045,0,0,0.57845045,-11.908038,394.83053)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
        inkscape:export-xdpi="200"
@@ -1708,7 +1706,7 @@
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
-       style="fill:#ffaaaa;stroke:none"
+       style="fill:#d5e5ff;fill-opacity:1;stroke:none"
        d="m 487.5788,555.77736 0,-53.625 17.75,0 17.75,0 0,53.625 0,53.625 -17.75,0 -17.75,0 0,-53.625 z"
        id="path6793"
        inkscape:connector-curvature="0"
@@ -1792,7 +1790,7 @@
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
-       style="fill:#ffaaaa;fill-opacity:1;stroke:none"
+       style="fill:#d5e5ff;fill-opacity:1;stroke:none"
        d="m 524.85938,627.29788 0,-16.75 55.125,0 55.125,0 0,16.75 0,16.75 -55.125,0 -55.125,0 0,-16.75 z"
        id="path7218"
        inkscape:connector-curvature="0"
@@ -1860,7 +1858,7 @@
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
-       style="fill:#ffaaaa;stroke:none"
+       style="fill:#d5e5ff;fill-opacity:1;stroke:none"
        d="m 488.875,698.98718 0,-54.25 17.75,0 17.75,0 0,54.25 0,54.25 -17.75,0 -17.75,0 0,-54.25 z"
        id="path6793-8"
        inkscape:connector-curvature="0"
@@ -1933,19 +1931,20 @@
        id="g4496"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
        inkscape:export-xdpi="200"
-       inkscape:export-ydpi="200">
+       inkscape:export-ydpi="200"
+       style="fill:#d5e5ff;fill-opacity:1">
       <rect
          y="644.414"
          x="524.00012"
          height="107.85714"
          width="111.07143"
          id="rect6391-6-8"
-         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+         style="fill:#d5e5ff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
       <path
          inkscape:connector-curvature="0"
          id="path7911"
          d="m 524.82342,698.34255 0,-53.12139 54.71238,0 54.71239,0 0,53.12139 0,53.1214 -54.71239,0 -54.71238,0 0,-53.1214 z"
-         style="fill:#ffaaaa;fill-opacity:1;stroke:none" />
+         style="fill:#d5e5ff;fill-opacity:1;stroke:none" />
     </g>
     <path
        sodipodi:type="arc"
@@ -1955,14 +1954,14 @@
        sodipodi:cy="414.95593"
        sodipodi:rx="134.3503"
        sodipodi:ry="32.324883"
-       d="m 500.02553,414.95593 a 134.3503,32.324883 0 1 1 -268.70059,0 134.3503,32.324883 0 1 1 268.70059,0 z"
+       d="m 500.02553,414.95593 c 0,17.85254 -60.15068,32.32489 -134.3503,32.32489 -74.19962,0 -134.35029,-14.47235 -134.35029,-32.32489 0,-17.85254 60.15067,-32.32488 134.35029,-32.32488 74.19962,0 134.3503,14.47234 134.3503,32.32488 z"
        transform="matrix(0.11168033,0,0,0.11414782,540.11506,665.22381)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
        transform="matrix(0.11176737,0,0,0.10585359,540.07292,668.52142)"
-       d="m 500.02553,414.95593 a 134.3503,32.324883 0 1 1 -268.70059,0 134.3503,32.324883 0 1 1 268.70059,0 z"
+       d="m 500.02553,414.95593 c 0,17.85254 -60.15068,32.32489 -134.3503,32.32489 -74.19962,0 -134.35029,-14.47235 -134.35029,-32.32489 0,-17.85254 60.15067,-32.32488 134.35029,-32.32488 74.19962,0 134.3503,14.47234 134.3503,32.32488 z"
        sodipodi:ry="32.324883"
        sodipodi:rx="134.3503"
        sodipodi:cy="414.95593"
@@ -1981,14 +1980,14 @@
        sodipodi:cy="409.90515"
        sodipodi:rx="41.416256"
        sodipodi:ry="8.0812206"
-       d="m 406.08133,409.90515 a 41.416256,8.0812206 0 1 1 -82.83252,0 41.416256,8.0812206 0 1 1 82.83252,0 z"
+       d="m 406.08133,409.90515 c 0,4.46314 -18.54269,8.08122 -41.41626,8.08122 -22.87357,0 -41.41626,-3.61808 -41.41626,-8.08122 0,-4.46313 18.54269,-8.08122 41.41626,-8.08122 22.87357,0 41.41626,3.61809 41.41626,8.08122 z"
        transform="matrix(0.12989702,0,0,0.11414782,533.1669,665.9917)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
        transform="matrix(0.12169914,0,0,0.09396914,536.15638,674.26304)"
-       d="m 406.08133,409.90515 a 41.416256,8.0812206 0 1 1 -82.83252,0 41.416256,8.0812206 0 1 1 82.83252,0 z"
+       d="m 406.08133,409.90515 c 0,4.46314 -18.54269,8.08122 -41.41626,8.08122 -22.87357,0 -41.41626,-3.61808 -41.41626,-8.08122 0,-4.46313 18.54269,-8.08122 41.41626,-8.08122 22.87357,0 41.41626,3.61809 41.41626,8.08122 z"
        sodipodi:ry="8.0812206"
        sodipodi:rx="41.416256"
        sodipodi:cy="409.90515"
@@ -2119,7 +2118,7 @@
            y="710.86218" /></flowRegion><flowPara
          id="flowPara8123-6-0"
          style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Garamond;-inkscape-font-specification:Garamond" /></flowRoot>    <rect
-       style="fill:#ffaaaa;fill-opacity:1;stroke:none"
+       style="fill:#d5e5ff;fill-opacity:1;stroke:none"
        id="rect8115"
        width="148"
        height="19"
@@ -2431,7 +2430,7 @@
        sodipodi:cy="252.09448"
        sodipodi:rx="3"
        sodipodi:ry="3"
-       d="m 521,252.09448 a 3,3 0 1 1 -6,0 3,3 0 1 1 6,0 z"
+       d="m 521,252.09448 c 0,1.65686 -1.34315,3 -3,3 -1.65685,0 -3,-1.34314 -3,-3 0,-1.65685 1.34315,-3 3,-3 1.65685,0 3,1.34315 3,3 z"
        transform="matrix(0.57845045,0,0,0.57845045,108.01733,730.82135)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper2\DataPath_HW.png"
        inkscape:export-xdpi="200"
@@ -2480,7 +2479,7 @@
        sodipodi:cy="252.09448"
        sodipodi:rx="3"
        sodipodi:ry="3"
-       d="m 521,252.09448 a 3,3 0 1 1 -6,0 3,3 0 1 1 6,0 z"
+       d="m 521,252.09448 c 0,1.65686 -1.34315,3 -3,3 -1.65685,0 -3,-1.34314 -3,-3 0,-1.65685 1.34315,-3 3,-3 1.65685,0 3,1.34315 3,3 z"
        transform="matrix(0.57845045,0,0,0.57845045,23.563558,745.28261)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper2\DataPath_HW.png"
        inkscape:export-xdpi="200"
@@ -2493,7 +2492,7 @@
        sodipodi:cy="252.09448"
        sodipodi:rx="3"
        sodipodi:ry="3"
-       d="m 521,252.09448 a 3,3 0 1 1 -6,0 3,3 0 1 1 6,0 z"
+       d="m 521,252.09448 c 0,1.65686 -1.34315,3 -3,3 -1.65685,0 -3,-1.34314 -3,-3 0,-1.65685 1.34315,-3 3,-3 1.65685,0 3,1.34315 3,3 z"
        transform="matrix(0.57845045,0,0,0.57845045,23.563558,716.3601)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper2\DataPath_HW.png"
        inkscape:export-xdpi="200"
@@ -2753,14 +2752,14 @@
        sodipodi:cy="414.95593"
        sodipodi:rx="134.3503"
        sodipodi:ry="32.324883"
-       d="m 500.02553,414.95593 a 134.3503,32.324883 0 1 1 -268.70059,0 134.3503,32.324883 0 1 1 268.70059,0 z"
+       d="m 500.02553,414.95593 c 0,17.85254 -60.15068,32.32489 -134.3503,32.32489 -74.19962,0 -134.35029,-14.47235 -134.35029,-32.32489 0,-17.85254 60.15067,-32.32488 134.35029,-32.32488 74.19962,0 134.3503,14.47234 134.3503,32.32488 z"
        transform="matrix(0.11168033,0,0,0.11414782,603.5546,987.97357)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper2\DataPath_HW.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
        transform="matrix(0.11176737,0,0,0.10585359,603.51246,991.27118)"
-       d="m 500.02553,414.95593 a 134.3503,32.324883 0 1 1 -268.70059,0 134.3503,32.324883 0 1 1 268.70059,0 z"
+       d="m 500.02553,414.95593 c 0,17.85254 -60.15068,32.32489 -134.3503,32.32489 -74.19962,0 -134.35029,-14.47235 -134.35029,-32.32489 0,-17.85254 60.15067,-32.32488 134.35029,-32.32488 74.19962,0 134.3503,14.47234 134.3503,32.32488 z"
        sodipodi:ry="32.324883"
        sodipodi:rx="134.3503"
        sodipodi:cy="414.95593"
@@ -2779,14 +2778,14 @@
        sodipodi:cy="409.90515"
        sodipodi:rx="41.416256"
        sodipodi:ry="8.0812206"
-       d="m 406.08133,409.90515 a 41.416256,8.0812206 0 1 1 -82.83252,0 41.416256,8.0812206 0 1 1 82.83252,0 z"
+       d="m 406.08133,409.90515 c 0,4.46314 -18.54269,8.08122 -41.41626,8.08122 -22.87357,0 -41.41626,-3.61808 -41.41626,-8.08122 0,-4.46313 18.54269,-8.08122 41.41626,-8.08122 22.87357,0 41.41626,3.61809 41.41626,8.08122 z"
        transform="matrix(0.12989702,0,0,0.11414782,596.60644,988.74146)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper2\DataPath_HW.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
        transform="matrix(0.12169914,0,0,0.09396914,599.59592,997.0128)"
-       d="m 406.08133,409.90515 a 41.416256,8.0812206 0 1 1 -82.83252,0 41.416256,8.0812206 0 1 1 82.83252,0 z"
+       d="m 406.08133,409.90515 c 0,4.46314 -18.54269,8.08122 -41.41626,8.08122 -22.87357,0 -41.41626,-3.61808 -41.41626,-8.08122 0,-4.46313 18.54269,-8.08122 41.41626,-8.08122 22.87357,0 41.41626,3.61809 41.41626,8.08122 z"
        sodipodi:ry="8.0812206"
        sodipodi:rx="41.416256"
        sodipodi:cy="409.90515"
@@ -3364,7 +3363,7 @@
          style="font-size:14px;text-align:center;text-anchor:middle;fill:#ff0000;fill-opacity:1">Megger SMRT1</flowPara><flowPara
          style="font-size:14px;text-align:center;text-anchor:middle;fill:#ff0000;fill-opacity:1"
          id="flowPara5739">Amplifier</flowPara></flowRoot>    <path
-       style="fill:none;stroke:#ff0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:2, 2;stroke-dashoffset:0"
+       style="fill:none;stroke:#ff0000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2, 2;stroke-dashoffset:0"
        d="m 544.11867,819.95628 0,116.79394 40.30509,0 0,35.00179 117.73327,0 0,-151.67441 z"
        id="path6170"
        inkscape:connector-curvature="0"

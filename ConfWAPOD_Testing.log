@@ -1,21 +1,14 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.1)  1 JAN 2015 22:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.14)  22 FEB 2015 21:15
 entering extended mode
 **ConfWAPOD_Testing.tex
 
-("Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConfWAPODTest\ConfWAPOD_Testing.
-tex"
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
-vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
-an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
-romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
-sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
-senglishmax, welsh, loaded.
-("Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConfWAPODTest\IEEEtran.cls"
+("C:\Users\e.rebello\Documents\University\data\Class Work\Thesis - KTH\Extra Wo
+rk\Papers\ConfWAPODTest\ConfWAPOD_Testing.tex"
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 68 languages loaded.
+
+("C:\Users\e.rebello\Documents\University\data\Class Work\Thesis - KTH\Extra Wo
+rk\Papers\ConfWAPODTest\IEEEtran.cls"
 Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -26,7 +19,7 @@ Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 368.
 
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\psnfss\ot1ptm.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -100,79 +93,86 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtmpitemindent=\dimen116
 \c@IEEEbiography=\count91
 \@IEEEtranrubishbin=\box26
-) (C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\cite\cite.sty
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\graphics\graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\graphics\keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\graphics\graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\graphics\trig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\00miktex\graphics.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\pdftex-def\pdftex.def
-File: pdftex.def 2011/01/28 v0.05d Graphics/color for pdfTeX
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
 \Gread@gobject=\count92
 ))
 \Gin@req@height=\dimen117
 \Gin@req@width=\dimen118
 )
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\graphics\color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\00miktex\color.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 137.
 )
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\ams\math\amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\ams\math\amstext.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\ams\math\amsgen.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen119
 ))
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\ams\math\amsbsy.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen120
 )
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\ams\math\amsopn.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count93
-LaTeX Info: Redefining \frac on input line 211.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count94
 \leftroot@=\count95
-LaTeX Info: Redefining \overline on input line 307.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count96
 \DOTSCASE@=\count97
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box27
 \strutbox@=\box28
 \big@size=\dimen121
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count98
 \c@MaxMatrixCols=\count99
 \dotsspace@=\muskip10
@@ -193,26 +193,28 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \multlinegap=\skip45
 \multlinetaggap=\skip46
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\subfig\subfig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\caption\caption3.sty
-Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen128
 \captionmargin@=\dimen129
 \captionwidth=\dimen130
-\caption@indent=\dimen131
-\caption@parindent=\dimen132
-\caption@hangindent=\dimen133
+\caption@tempdima=\dimen131
+\caption@indent=\dimen132
+\caption@parindent=\dimen133
+\caption@hangindent=\dimen134
 Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used on input line 1084.
+(caption)             standard defaults will be used.
 )
 \c@KVtest=\count105
 \sf@farskip=\skip47
-\sf@captopadj=\dimen134
+\sf@captopadj=\dimen135
 \sf@capskip=\skip48
 \sf@nearskip=\skip49
 \c@subfigure=\count106
@@ -224,13 +226,13 @@ Package caption Info: Unknown document class (or package),
 \sf@top=\skip50
 \sf@bottom=\skip51
 )
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\base\fixltx2e.sty
-Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
-LaTeX Info: Redefining \em on input line 420.
-LaTeX Info: The control sequence `\[' is already robust on input line 471.
-LaTeX Info: The control sequence `\]' is already robust on input line 472.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fixltx2e.sty"
+Package: fixltx2e 2014/09/29 v1.1s fixes to LaTeX
+LaTeX Info: Redefining \em on input line 430.
+LaTeX Info: The control sequence `\[' is already robust on input line 481.
+LaTeX Info: The control sequence `\]' is already robust on input line 482.
 )
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\float\float.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count112
 \float@exts=\toks21
@@ -238,17 +240,18 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks22
 \@floatcapt=\box30
 )
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\sttools\stfloats.sty
-Package: stfloats 1999/10/22
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\sttools\stfloats.sty"
+Package: stfloats 2012/05/29 v1.1 Improve float mechanism and baselineskip sett
+ings
 \@dblbotnum=\count113
 \c@dblbotnumber=\count114
 )
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\ltxmisc\url.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConfWAPODTest\ConfWAPOD_Testing.
-aux")
+("C:\Users\e.rebello\Documents\University\data\Class Work\Thesis - KTH\Extra Wo
+rk\Papers\ConfWAPODTest\ConfWAPOD_Testing.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 212.
 LaTeX Font Info:    ... okay on input line 212.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 212.
@@ -261,31 +264,39 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 212.
 LaTeX Font Info:    ... okay on input line 212.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 212.
 LaTeX Font Info:    ... okay on input line 212.
- (C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\context\base\supp-pdf.mkii
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count115
-\scratchdimen=\dimen135
+\scratchdimen=\dimen136
 \scratchbox=\box31
 \nofMPsegments=\count116
 \nofMParguments=\count117
 \everyMPshowfont=\toks23
 \MPscratchCnt=\count118
-\MPscratchDim=\dimen136
+\MPscratchDim=\dimen137
 \MPnumerator=\count119
+\makeMPintoPDFobject=\count120
 \everyMPtoPDFconversion=\toks24
 )
 Package caption Info: Begin \AtBeginDocument code.
-Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
-LaTeX Info: Redefining \subref on input line 212.
+Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-** WARNING: \thanks is locked out when in conference mode (line 237).
-LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 242.
+** WARNING: \thanks is locked out when in conference mode (line 238).
+
+Underfull \hbox (badness 1881) in paragraph at lines 242--244
+[]\OT1/ptm/b/it/9 Abstract\OT1/ptm/b/n/9 ---Prototype Wide-Area Power sys-tem O
+s-cil-la-tion
+ []
+
 <TwoArea.png, id=1, 537.9297pt x 205.4877pt>
 File: TwoArea.png Graphic file (type png)
  <use TwoArea.png>
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 293--294
+Package pdftex.def Info: TwoArea.png used on input line 294.
+(pdftex.def)             Requested size: 252.94499pt x 96.62312pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 294--295
  [][] 
  []
 
@@ -298,72 +309,86 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 304.
+               Default added (so using `tbp') on input line 305.
 
 <ArchitectureDevelopment.pdf, id=11, 2169.72742pt x 357.8453pt>
 File: ArchitectureDevelopment.pdf Graphic file (type pdf)
 
 <use ArchitectureDevelopment.pdf>
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 306--307
+Package pdftex.def Info: ArchitectureDevelopment.pdf used on input line 307.
+(pdftex.def)             Requested size: 252.94499pt x 41.71648pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 307--308
  [][] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 322.
+(Font)              <7> on input line 323.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 322.
+(Font)              <5> on input line 323.
 <DSC05446.JPG, id=12, 3083.52pt x 816.04875pt>
 File: DSC05446.JPG Graphic file (type jpg)
  <use DSC05446.JPG>
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 331--333
+Package pdftex.def Info: DSC05446.JPG used on input line 332.
+(pdftex.def)             Requested size: 252.94499pt x 66.94133pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 332--334
  [][] 
  []
 
-[2 <Z:/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/TwoArea.png> <Z:
-/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/ArchitectureDevelopmen
-t.pdf> <Z:/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/DSC05446.JPG
->]
-Underfull \hbox (badness 2970) in paragraph at lines 340--341
+[2 <C:/Users/e.rebello/Documents/University/data/Class Work/Thesis - KTH/Extra 
+Work/Papers/ConfWAPODTest/TwoArea.png> <C:/Users/e.rebello/Documents/University
+/data/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/ArchitectureDevel
+opment.pdf> <C:/Users/e.rebello/Documents/University/data/Class Work/Thesis - K
+TH/Extra Work/Papers/ConfWAPODTest/DSC05446.JPG>]
+Underfull \hbox (badness 2970) in paragraph at lines 341--342
  \OT1/ptm/m/it/10 Real-Time Phasor-POD Al-go-rithm: [] \OT1/ptm/m/n/10 The FPGA
  of a
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 348.
+(Font)              <8> on input line 349.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 348.
+(Font)              <6> on input line 349.
 <DelaySources.pdf, id=29, 564.91031pt x 230.2764pt>
 File: DelaySources.pdf Graphic file (type pdf)
  <use DelaySources.pdf>
-<SVC_ResponseComparison_Labelled.pdf, id=30, 625.33624pt x 480.79625pt>
+Package pdftex.def Info: DelaySources.pdf used on input line 364.
+(pdftex.def)             Requested size: 433.62pt x 176.7582pt.
+
+[3] <SVC_ResponseComparison_Labelled.pdf, id=37, 625.33624pt x 480.79625pt>
 File: SVC_ResponseComparison_Labelled.pdf Graphic file (type pdf)
 
 <use SVC_ResponseComparison_Labelled.pdf>
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 383--384
+Package pdftex.def Info: SVC_ResponseComparison_Labelled.pdf used on input line
+ 384.
+(pdftex.def)             Requested size: 252.94499pt x 194.47931pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 384--385
 [][] 
  []
 
 
-Underfull \hbox (badness 2197) in paragraph at lines 379--388
+Underfull \hbox (badness 2197) in paragraph at lines 380--389
 []\OT1/ptm/m/n/10 A setup iden-ti-cal to that out-lined in Fig-ure 4[] was
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--388
+Underfull \hbox (badness 10000) in paragraph at lines 380--389
 
  []
 
-[3]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2689) has occurred while \output is active []
 
- [4 <Z:/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/DelaySources.pd
-f> <Z:/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/SVC_ResponseComp
-arison_Labelled.pdf>]
-Underfull \hbox (badness 2261) in paragraph at lines 436--437
+ [4 <C:/Users/e.rebello/Documents/University/data/Class Work/Thesis - KTH/Extra
+ Work/Papers/ConfWAPODTest/DelaySources.pdf> <C:/Users/e.rebello/Documents/Univ
+ersity/data/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/SVC_Respons
+eComparison_Labelled.pdf>]
+Underfull \hbox (badness 2261) in paragraph at lines 437--438
 \OT1/ptm/m/n/8 able On-line: $http : / / www . nerc . com / pa / rrm / ea / Sys
 tem \OMS/cmsy/m/n/8 n \OT1/ptm/m/n/8 %20Disturbance \OMS/cmsy/m/n/8 n$
  []
@@ -372,25 +397,25 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--464
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
 $\OT1/ptm/m/n/8 sps / examples[]v2 / performance-[]of-[]three-[]pss-[]for-[]int
 erarea-[]oscillations .$
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 471.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 472.
 
-(C:\PROGRAMS\MiKTeX\MiKTeX_2.9\tex\latex\psnfss\omsptm.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 471.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 472.
 
-Underfull \hbox (badness 5667) in paragraph at lines 471--472
+Underfull \hbox (badness 5667) in paragraph at lines 472--473
 []\OT1/ptm/m/n/8 SMRT1 Sin-gle Phase Re-lay Test Sys-tem Data Sheet, Avail-
  []
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 471--472
+Underfull \hbox (badness 2443) in paragraph at lines 472--473
 \OT1/ptm/m/n/8 able On-line $http : / / www . megger . com / common / documents
  / SMRT1[]DS[]$
  []
@@ -407,31 +432,32 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 [5]
-("Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConfWAPODTest\ConfWAPOD_Testing.
-aux") ) 
+("C:\Users\e.rebello\Documents\University\data\Class Work\Thesis - KTH\Extra Wo
+rk\Papers\ConfWAPODTest\ConfWAPOD_Testing.aux") ) 
 Here is how much of TeX's memory you used:
- 3329 strings out of 494053
- 50683 string characters out of 3147732
- 122134 words of memory out of 3000000
- 6594 multiletter control sequences out of 15000+200000
- 42177 words of font info for 76 fonts, out of 3000000 for 9000
- 718 hyphenation exceptions out of 8191
- 36i,9n,38p,1279b,334s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/enc/dvips/fontname/8r.enc}<C:/PROGR
-AMS/MiKTeX/MiKTeX_2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/PROGRAMS/Mi
-KTeX/MiKTeX_2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/PROGRAMS/MiKTeX/Mi
-KTeX_2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9
-/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/type1/public/am
-sfonts/cm/cmsy7.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/type1/urw/times/utmb8a.pfb><C
-:/PROGRAMS/MiKTeX/MiKTeX_2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/PROGRAMS/MiK
-TeX/MiKTeX_2.9/fonts/type1/urw/times/utmr8a.pfb><C:/PROGRAMS/MiKTeX/MiKTeX_2.9/
-fonts/type1/urw/times/utmri8a.pfb>
-Output written on ConfWAPOD_Testing.pdf (5 pages, 1890176 bytes).
+ 3538 strings out of 493705
+ 54873 string characters out of 3142140
+ 123244 words of memory out of 3000000
+ 6831 multiletter control sequences out of 15000+200000
+ 40411 words of font info for 74 fonts, out of 3000000 for 9000
+ 1028 hyphenation exceptions out of 8191
+ 36i,9n,38p,1279b,336s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ConfWAPOD_Testing.pdf (5 pages, 1890338 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
+ 215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

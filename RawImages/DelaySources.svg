@@ -802,6 +802,48 @@
          offset="1"
          id="stop4664-0-52" />
     </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4660-3-4-4"
+       id="linearGradient7727-4-3-2"
+       gradientUnits="userSpaceOnUse"
+       x1="182.75586"
+       y1="531.74103"
+       x2="262.95312"
+       y2="531.74103" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4660-3-4-4">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4662-8-3-5" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop4664-0-2-5" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4660-3-4-4-2"
+       id="linearGradient7727-4-3-2-5"
+       gradientUnits="userSpaceOnUse"
+       x1="182.75586"
+       y1="531.74103"
+       x2="262.95312"
+       y2="531.74103" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4660-3-4-4-2">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4662-8-3-5-7" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop4664-0-2-5-6" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -811,8 +853,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="180.49827"
-     inkscape:cy="68.209278"
+     inkscape:cx="381.91397"
+     inkscape:cy="125.02465"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -2614,18 +2656,18 @@
          style="fill:#2b2b2b" />
     </g>
     <rect
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect6391-6-0-8"
        width="111.07143"
        height="34.489429"
-       x="587.88818"
-       y="932.80292"
+       x="587.38818"
+       y="933.24042"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper2\DataPath_HW.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
        style="fill:#d5e5ff;fill-opacity:1;stroke:none"
-       d="m 588.29892,950.04764 0,-16.75 55.125,0 55.125,0 0,16.75 0,16.75 -55.125,0 -55.125,0 0,-16.75 z"
+       d="m 588.29892,950.04764 0,-16.75 54.75,0 54.75,0 0,16.75 0,16.75 -54.75,0 -54.75,0 0,-16.75 z"
        id="path7218-2"
        inkscape:connector-curvature="0"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper2\DataPath_HW.png"
@@ -2716,7 +2758,7 @@
            style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:tb-rl;text-anchor:start;font-family:Garamond;-inkscape-font-specification:Garamond" /></flowRegion><flowPara
          id="flowPara4615-6-0-3-9"
          style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:tb-rl;text-anchor:start;font-family:Garamond;-inkscape-font-specification:Garamond">TCP</flowPara></flowRoot>    <rect
-       style="fill:none;stroke:#000000;stroke-width:1.99275577;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#000000;stroke-width:1.993;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect6391-6-9-6-3"
        width="36.851852"
        height="107.62794"
@@ -2742,7 +2784,7 @@
          inkscape:connector-curvature="0"
          id="path7911-4"
          d="m 524.82342,698.34255 0,-53.12139 54.71238,0 54.71239,0 0,53.12139 0,53.1214 -54.71239,0 -54.71238,0 0,-53.1214 z"
-         style="fill:#d5e5ff;fill-opacity:1;stroke:none" />
+         style="fill:#d5e5ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none" />
     </g>
     <path
        sodipodi:type="arc"
@@ -2908,8 +2950,8 @@
        id="rect3714-0"
        width="155.20995"
        height="63.286057"
-       x="127.78626"
-       y="1027.2155"
+       x="-169.19858"
+       y="1021.5586"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
@@ -2918,7 +2960,7 @@
        id="rect8115-1"
        width="148"
        height="19"
-       x="130.81265"
+       x="23.332424"
        y="1031.3516"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
        inkscape:export-xdpi="200"
@@ -2929,7 +2971,7 @@
        id="path6866-0-21-5-8"
        inkscape:connector-curvature="0"
        clip-path="url(#clipPath6895-5-9-7)"
-       transform="matrix(0.13929142,0,0,0.13929142,91.320214,961.97901)"
+       transform="matrix(0.13929142,0,0,0.13929142,-16.160014,961.97901)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
@@ -2939,7 +2981,7 @@
        id="path6866-60-6"
        inkscape:connector-curvature="0"
        clip-path="url(#clipPath6901-5-0)"
-       transform="matrix(0.15609866,0,0,0.15609866,89.386534,952.27098)"
+       transform="matrix(0.15609866,0,0,0.15609866,-18.093694,952.27098)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
@@ -2947,7 +2989,7 @@
        xml:space="preserve"
        id="flowRoot8117-2"
        style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(69.778473,322.72139)"
+       transform="translate(-37.701755,322.72139)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200"><flowRegion
@@ -2962,7 +3004,7 @@
        xml:space="preserve"
        id="flowRoot8117-5-9"
        style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(114.27847,343.72139)"
+       transform="translate(6.7982421,343.72139)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200"><flowRegion
@@ -2977,7 +3019,7 @@
        xml:space="preserve"
        id="flowRoot8117-5-5-6"
        style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(114.04361,361.62935)"
+       transform="translate(6.5633821,361.62935)"
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200"><flowRegion
@@ -3389,5 +3431,113 @@
        inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper2\DataPath_HW.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
-  </g>
+    <g
+       id="g5695-1"
+       transform="translate(-170.75626,212.93008)"
+       inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper2\DataPath_HW.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5301-70-7"
+         d="m 352.32788,842.94367 22.25,0"
+         style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5301-7-3-4"
+         d="m 352.32788,847.44367 22.25,0"
+         style="fill:none;stroke:#ffff00;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5301-78-4-0"
+         d="m 352.32788,851.94367 22.25,0"
+         style="fill:none;stroke:#0000ff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot8117-5-9-9"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(138.55002,343.21677)"
+       inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><flowRegion
+         id="flowRegion8119-9-1-4"><rect
+           id="rect8121-4-5-8"
+           width="144.5"
+           height="15.5"
+           x="73.5"
+           y="710.86218" /></flowRegion><flowPara
+         id="flowPara8123-6-03-8"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Garamond;-inkscape-font-specification:Garamond">Wired V,I connections</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4609-1-8-1-1"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Garamond;-inkscape-font-specification:Garamond"
+       transform="translate(344.51412,297.48757)"
+       inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper2\DataPath_HW.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><flowRegion
+         id="flowRegion4611-7-1-13-7"
+         style="fill:url(#linearGradient7727-4-3-2);fill-opacity:1"><rect
+           id="rect4613-4-5-25-1"
+           width="105.5061"
+           height="45.809395"
+           x="182.85715"
+           y="525.93359"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Garamond;-inkscape-font-specification:Garamond" /></flowRegion><flowPara
+         id="flowPara4615-0-8-3-1"
+         style="font-size:36px;fill:#000000;fill-opacity:1">*</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4609-1-8-1-1-1"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Garamond;-inkscape-font-specification:Garamond"
+       transform="translate(2.25912,542.53366)"
+       inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper2\DataPath_HW.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><flowRegion
+         id="flowRegion4611-7-1-13-7-4"
+         style="fill:url(#linearGradient7727-4-3-2-5);fill-opacity:1"><rect
+           id="rect4613-4-5-25-1-2"
+           width="105.5061"
+           height="45.809395"
+           x="182.85715"
+           y="525.93359"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Garamond;-inkscape-font-specification:Garamond" /></flowRegion><flowPara
+         id="flowPara4615-0-8-3-1-3"
+         style="font-size:36px;fill:#000000;fill-opacity:1">*</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot8117-5-9-9-2"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(137.8801,361.71183)"
+       inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper1\DataFlow.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><flowRegion
+         id="flowRegion8119-9-1-4-2"><rect
+           id="rect8121-4-5-8-1"
+           width="208.84671"
+           height="36.713203"
+           x="73.5"
+           y="710.86218" /></flowRegion><flowPara
+         id="flowPara8123-6-03-8-6"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Garamond;-inkscape-font-specification:Garamond">Only one PMU´s </flowPara><flowPara
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Garamond;-inkscape-font-specification:Garamond"
+         id="flowPara3723">connections shown</flowPara><flowPara
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Garamond;-inkscape-font-specification:Garamond"
+         id="flowPara3721" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4609-64-1-8"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Garamond;-inkscape-font-specification:Garamond"
+       transform="translate(254.35413,551.37095)"
+       inkscape:export-filename="Z:\Class Work\Thesis - KTH\Extra Work\Papers\ConferencePaper2\DataPath_HW.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><flowRegion
+         id="flowRegion4611-4-2-5"><rect
+           id="rect4613-1-5-7"
+           width="116"
+           height="35"
+           x="182.85715"
+           y="525.93359"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Garamond;-inkscape-font-specification:Garamond" /></flowRegion><flowPara
+         id="flowPara4615-9-0-6"
+         style="font-size:14px;text-align:center;text-anchor:middle">POD algorithm</flowPara><flowPara
+         style="font-size:14px;text-align:center;text-anchor:middle"
+         id="flowPara3755">runs here</flowPara></flowRoot>  </g>
 </svg>

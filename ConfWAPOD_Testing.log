@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.14)  22 MAR 2015 19:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.14)  29 MAR 2015 19:43
 entering extended mode
 **ConfWAPOD_Testing.tex
 
@@ -293,15 +293,12 @@ s-cil-la-tion
 <TwoArea.pdf, id=1, 1793.09903pt x 1127.30045pt>
 File: TwoArea.pdf Graphic file (type pdf)
  <use TwoArea.pdf>
-Package pdftex.def Info: TwoArea.pdf used on input line 296.
+Package pdftex.def Info: TwoArea.pdf used on input line 295.
 (pdftex.def)             Requested size: 252.94499pt x 159.00786pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 296--297
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 295--296
  [][] 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
@@ -311,8 +308,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ArchitectureDevelopment.pdf Graphic file (type pdf)
 
 <use ArchitectureDevelopment.pdf>
-Package pdftex.def Info: ArchitectureDevelopment.pdf used on input line 309.
-(pdftex.def)             Requested size: 361.34999pt x 59.59341pt.
+Package pdftex.def Info: ArchitectureDevelopment.pdf used on input line 308.
+(pdftex.def)             Requested size: 433.62pt x 71.51318pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 325.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -332,81 +329,103 @@ Overfull \hbox (0.94499pt too wide) in paragraph at lines 334--336
 Work/Papers/ConfWAPODTest/TwoArea.pdf> <C:/Users/e.rebello/Documents/University
 /data/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/DSC05446.JPG>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 351.
+(Font)              <8> on input line 353.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 351.
+(Font)              <6> on input line 353.
 
 <DelaySources.pdf, id=29, 564.91031pt x 230.2764pt>
 File: DelaySources.pdf Graphic file (type pdf)
  <use DelaySources.pdf>
-Package pdftex.def Info: DelaySources.pdf used on input line 366.
-(pdftex.def)             Requested size: 433.62pt x 176.7582pt.
+Package pdftex.def Info: DelaySources.pdf used on input line 368.
+(pdftex.def)             Requested size: 469.75499pt x 191.48776pt.
 
 [3 <C:/Users/e.rebello/Documents/University/data/Class Work/Thesis - KTH/Extra 
 Work/Papers/ConfWAPODTest/ArchitectureDevelopment.pdf>]
-<SVC_ResponseComparison_Labelled.pdf, id=48, 625.33624pt x 480.79625pt>
-File: SVC_ResponseComparison_Labelled.pdf Graphic file (type pdf)
-
-<use SVC_ResponseComparison_Labelled.pdf>
-Package pdftex.def Info: SVC_ResponseComparison_Labelled.pdf used on input line
- 386.
-(pdftex.def)             Requested size: 252.94499pt x 194.47931pt.
-
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 386--387
-[][] 
- []
-
-
-Underfull \hbox (badness 2197) in paragraph at lines 382--391
+Underfull \hbox (badness 2197) in paragraph at lines 385--386
 []\OT1/ptm/m/n/10 A setup iden-ti-cal to that out-lined in Fig-ure 4[] was
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 382--391
-\OT1/ptm/m/n/10 a va-ri-ety of sig-nals ex-tracted (or cal-cu-lated) from the
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
+
+ []
+
+<SVC_ResponseComparison_Labelled.pdf, id=48, 638.385pt x 389.455pt>
+File: SVC_ResponseComparison_Labelled.pdf Graphic file (type pdf)
+
+<use SVC_ResponseComparison_Labelled.pdf>
+Package pdftex.def Info: SVC_ResponseComparison_Labelled.pdf used on input line
+ 390.
+(pdftex.def)             Requested size: 252.94499pt x 154.31142pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 390--391
+[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--391
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
  []
 
 [4 <C:/Users/e.rebello/Documents/University/data/Class Work/Thesis - KTH/Extra 
 Work/Papers/ConfWAPODTest/DelaySources.pdf> <C:/Users/e.rebello/Documents/Unive
 rsity/data/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/SVC_Response
-Comparison_Labelled.pdf>]
-Underfull \hbox (badness 2261) in paragraph at lines 439--440
+Comparison_Labelled.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/e.rebello/Documents/University/data
+/Class Work/Thesis - KTH/Extra Work/Papers/ConfWAPODTest/SVC_ResponseComparison
+_Labelled.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
+
+ []
+
+<CIGRE_Report_Drawing.pdf, id=172, 874.26625pt x 482.80376pt>
+File: CIGRE_Report_Drawing.pdf Graphic file (type pdf)
+
+<use CIGRE_Report_Drawing.pdf>
+Package pdftex.def Info: CIGRE_Report_Drawing.pdf used on input line 404.
+(pdftex.def)             Requested size: 505.89pt x 279.37071pt.
+
+Underfull \hbox (badness 2261) in paragraph at lines 450--451
 \OT1/ptm/m/n/8 able On-line: $http : / / www . nerc . com / pa / rrm / ea / Sys
 tem \OMS/cmsy/m/n/8 n \OT1/ptm/m/n/8 %20Disturbance \OMS/cmsy/m/n/8 n$
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 462--463
+[]\OT1/ptm/m/it/8 Operating In-struc-tions and Spec-i-fi-ca-tions Com-pact RIO 
+NI cRIO-
  []
 
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
-
-Underfull \hbox (badness 10000) in paragraph at lines 466--467
-$\OT1/ptm/m/n/8 sps / examples[]v2 / performance-[]of-[]three-[]pss-[]for-[]int
-erarea-[]oscillations .$
- []
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 474.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 480.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 474.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 480.
 
-Underfull \hbox (badness 5667) in paragraph at lines 474--475
+Underfull \hbox (badness 5667) in paragraph at lines 480--481
 []\OT1/ptm/m/n/8 SMRT1 Sin-gle Phase Re-lay Test Sys-tem Data Sheet, Avail-
  []
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 474--475
+Underfull \hbox (badness 2443) in paragraph at lines 480--481
 \OT1/ptm/m/n/8 able On-line $http : / / www . megger . com / common / documents
  / SMRT1[]DS[]$
  []
 
+[5]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -418,17 +437,20 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5]
+[6
+
+ <C:/Users/e.rebello/Documents/University/data/Class Work/Thesis - KTH/Extra Wo
+rk/Papers/ConfWAPODTest/CIGRE_Report_Drawing.pdf>]
 ("C:\Users\e.rebello\Documents\University\data\Class Work\Thesis - KTH\Extra Wo
 rk\Papers\ConfWAPODTest\ConfWAPOD_Testing.aux") ) 
 Here is how much of TeX's memory you used:
- 3538 strings out of 493705
- 54874 string characters out of 3142140
- 122248 words of memory out of 3000000
- 6832 multiletter control sequences out of 15000+200000
+ 3542 strings out of 493705
+ 55004 string characters out of 3142140
+ 123248 words of memory out of 3000000
+ 6835 multiletter control sequences out of 15000+200000
  40411 words of font info for 74 fonts, out of 3000000 for 9000
  1028 hyphenation exceptions out of 8191
- 36i,9n,38p,1237b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,9n,38p,1324b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX
  2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
@@ -442,9 +464,9 @@ m/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ConfWAPOD_Testing.pdf (5 pages, 1908865 bytes).
+Output written on ConfWAPOD_Testing.pdf (6 pages, 2507411 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
+ 234 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -9,7 +9,7 @@
 % should be used if it is desired that the figures are to be displayed in
 % draft mode.
 %
-\documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 10 pt, conference]{IEEEtran}
 % Add the compsoc option for Computer Society conferences.
 %
 
@@ -37,8 +37,8 @@
 
 
 
-
-
+\usepackage{fancyhdr}
+\usepackage{textcomp}
 
 % *** CITATION PACKAGES ***
 %
@@ -216,6 +216,24 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
+%\author{\IEEEauthorblockN{Author 1}
+%	\IEEEauthorblockA{Institute\\
+%		City, Country\\
+%		Email: abc@xyz.com}
+%	\thanks{And so on}
+%	\and
+%	
+%	\IEEEauthorblockN{Author 2}
+%	\IEEEauthorblockA{Institute\\
+%		City, Country\\
+%		Email: abc@xyz.com}
+%	\and
+%	\IEEEauthorblockN{Author 3}
+%	\IEEEauthorblockA{Institute\\
+%		City, Country\\
+%		Email: abc@xyz.com}
+%}
+
 \author{\IEEEauthorblockN{Eldrich Rebello}
 \IEEEauthorblockA{KTH Royal Institute of Technology\\
 Stockholm, Sweden\\
@@ -223,15 +241,15 @@ Email: rebello@kth.se}
 \thanks{And so on}
 \and
 
-\IEEEauthorblockN{Md. Shoaib Almas}
+\IEEEauthorblockN{Muhammad Shoaib Almas}
 \IEEEauthorblockA{KTH Royal Institute of Technology\\
 	Stockholm, Sweden\\
 	Email: msalmas@kth.se}
 \and
 \IEEEauthorblockN{Luigi Vanfretti}
-\IEEEauthorblockA{KTH, Stockholm\\
+\IEEEauthorblockA{KTH Royal Institute of Technology, Stockholm\\
 Statnett SF, Oslo, Norway\\
-Email: luigi.vanfretti@statnett.no}
+Email: luigiv@kth.se, luigi.vanfretti@statnett.no}
 }
 
 % make the title area
@@ -257,12 +275,18 @@ Prototype Wide-Area Power system Oscillation Damping (WAPOD) controllers using s
 \IEEEpeerreviewmaketitle
 
 \section{Introduction}
+\thispagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{978-1-4799-7993-6/15/\$31.00 \textcopyright~2015 IEEE}
+
+%\footnote{978-1-4799-7993-6/15/\$31.00 ©2015 IEEE}
 \subsection{Motivation}
-Instances such as the Northeast blackout of August 2003 and the August 1996 Western North America (WECC)\cite{NAERC} blackout have been significantly disruptive events on large, interconnected power systems. The culprit behind the WECC blackout was low frequency, electromechanically induced, inter-area oscillations\cite{NAERC}. These oscillations involve the generators of one synchronous area oscillating against those of another area and are typically between 0.1-2 Hz in frequency. The fact that these modes are poorly damped\cite{WAPODNorway} presents a danger to power systems with interconnections used for purposes such as power exchange.
+Instances such as the Northeast blackout of August 2003 and the August 1996 Western North America (WECC)\cite{NAERC} blackout have been significantly disruptive events on large, interconnected power systems. The culprit behind the WECC blackout were low frequency, electromechanically induced, inter-area oscillations\cite{NAERC}. These oscillations involve the generators of one synchronous area oscillating against those of another area and are typically between 0.1-2 Hz in frequency. The fact that these modes are poorly damped\cite{WAPODNorway} presents a danger to power systems with interconnections used for purposes such as power exchange.
 %The growth of power system interconnections between previously unconnected areas has given rise to the phenomenon of inter-area oscillations. These are low frequency (0.1-2 Hz.) oscillations where the generators of one synchronous area oscillate against those of another area. Damping for these oscillations is generally poor and if they are allowed to grow, they can lead to disconnection of the ties or a collapse of the power system. A famous example of the latter was the August 1996 blackout of the WSCC system in the USA \cite{NAERC}. Although the purpose of system interconnection was to increase stability, the present situation of the power system incorporates renewable energy sources and power trading corridors, both of which impact system stability.
 
 \subsection{Previous Experiences}
-The phenomenon of intra-area oscillations is well documented and has traditionally been solved using Power System Stabilizers (PSS). A PSS uses locally available signals and might not be very effective at damping inter-area modes with poor local observability \cite{Yuwa},\cite{localREMcomparison}. Wide-area control systems as tested in demonstration projects in Norway \cite{WAPODNorway} and China \cite{WAPODChina} have extended the control system of an existing device to receive and use synchrophasor (IEEE C37.118) data.
+The phenomenon of intra-area oscillations is well documented and has traditionally been solved using Power System Stabilizers (PSS). A PSS uses locally available signals and might not be very effective at damping inter-area modes with poor local observability \cite{Yuwa}\cite{localREMcomparison}. Wide-area control systems, as tested in demonstration projects in Norway \cite{WAPODNorway} and China \cite{WAPODChina}, have extended the control system of an existing device to receive and use synchrophasor (IEEE C37.118) data.
 %Modern solutions to the problem of inter-area oscillations involve using Power System Stabilisers (PSS) with locally available signals. These are effective at damping intra-area modes with good observability but may not be as effective at damping inter-area modes \cite{WAPODNorway} \cite{localREMcomparison}. Although initial field tests in \cite{WAPODNorway} \& \cite{WAPODChina} show promising results, the wide-area control systems tested so far have been implemented by extending the installed control system of an existing device (e.g. an SVC, see \cite{WAPODNorway}) to receive synchrophasor data, process it and to then feed the control algorithm. To the knowledge of the authors, there has not been any reported attempt at designing a general purpose, wire-area control system, starting from specifications and considering different hardware and software constraints. Such an approach is attractive as it can easily be adapted to different controllable elements thereby reducing implementation costs and facilitating straightforward development.
 %\vspace{-0.7em}
 \subsection{Contributions}
@@ -271,7 +295,7 @@ The goal of this paper is to document the details of the design and construction
 %This setup can serve as a starting point for future HIL tests that involve real-time, synchrophasor-based controllers.
 
 \subsection*{Note:}
-The term 'real-time' as used in this work is identical to the sense as used in the field of embedded control\cite{Real-Time}. Though a simulated power network is used, it is executed in real-time so any external controller based on inputs from this system must behave in an identical manner when the same inputs are sourced from an actual power network. Both the real-time simulator and the cRIO controller clocks run simultaneously and as fast as an actual clock. While their internal clocks might differ in speed, they are synchronous and respect real-time constraints. The controller designed is thus able to provide feedback control to the power network model so as to affect the network at that point in time. Real-time is used in the sense that control output generated by the controller is guaranteed to be produced synchronously and in a fixed time frame which, in this case, is 50 $\mu$s. The timing limitations imposed are strict and if any delays occur, the controller is deemed to have failed. 
+The term `real-time' as used in this work is identical to the sense used in the field of embedded control\cite{Real-Time}. Though a simulated power network is used, it is executed in real-time so any external controller based on inputs from this system must behave in an identical manner when the same inputs are sourced from an actual power network. Both the real-time simulator and the cRIO controller clocks run simultaneously and as fast as an actual clock. While their internal clocks might differ in speed, they are synchronous and respect real-time constraints. The controller designed is thus able to provide feedback control to the power network model so as to affect the network at that point in time. Real-time is used in the sense that control output generated by the controller is guaranteed to be produced synchronously and in a fixed time frame which, in this case, is 50 $\mu$s. The timing limitations imposed are strict and if any delays occur, the controller is deemed to have failed. 
 
 %\"{A}ngquist and Gama's\cite{PhasorPOD} Phasor Power Oscillation (Phasor POD) algorithm was chosen based on the operational requirements and control system design constraints. The developed prototype is termed a Wide Area Power Oscillation Damper (WAPOD). For purposes of comparison, the real-time \textsc{Simulink} implementation of the Phasor POD algorithm by Almas and Vanfretti \cite{PhasorPODImplement} is used as a benchmark. The performance of the hardware prototype developed will be tested and compared to the performance of this implementation of the algorithm. The two-area four-machine model developed by Klein, Rogers and Kundur \cite{KundurTwoArea} is used as a test-case and is modified to fit the requirements of experimental testing. A Hardware-in-the-loop experiment is constructed around the e\textsc{MEGASIM} real-time simulator from OPAL-RT \cite{OPALemegasim} with the two-area model running in real-time, physical PMUs and a synchrophasor-based Phasor-POD algorithm running on a cRIO (Figure \ref{Data_path}).
 
@@ -326,7 +350,7 @@ The e\textsc{megasim} real-time simulator from OPAL-RT\cite{OPALemegasim} was at
 \item \textbf{Analogue Inputs}: 128 (+/-100 V and +/-10 mA)
 \end{itemize}
 
-The simulator computed and updated values for all variables in the two-area model every 50 $\mu$s. This time step was selected to allow for the assumption of linearity of power system variables between each integration time-step. Updated values were written to the analogue outputs and input values read at the analogue inputs every 50 $\mu$s. The \textsc{Simulink} model was developed and edited on a workstation computer and the same computer was used to monitor output from the simulator while the model was running.
+The simulator computed and updated values for all variables in the two-area model every 50 $\mu$s. This time step was selected to allow for the assumption of linearity of power system variables between each integration time step. Updated values were written to the analogue outputs and input values read at the analogue inputs every 50 $\mu$s. The \textsc{Simulink} model was developed and edited on a workstation computer and the same computer was used to monitor output from the simulator while the model was running.
 
 \subsection{cRIO Real-Time Controllers}
 \begin{figure}[H]
@@ -336,11 +360,11 @@ The simulator computed and updated values for all variables in the two-area mode
 \caption{cRIO9081 showing an NI9225, three-channel, analogue voltage input module and seven empty add-on module slots}
 \label{cRIO}
 \end{figure}
-Two different cRIO models were used in this particular HIL experiment. One model, the NI-cRIO9081, was used to run the Phasor-POD algorithm in real-time. Two NI-cRIO9076s were deployed as PMUs. Figure~\ref{cRIO} shows the NI-cRIO9081 with an analogue voltage input add-on module connected. The data generated by the Phasor-POD algorithm was sent as an analogue signal back to the real-time simulator. Alternate control hardware can be expected to perform equally well as long as the timing requirements are rigidly enforced.
+Two different cRIO models were used in this particular HIL experiment. One model, the NI-cRIO9081, was used to run the Phasor-POD algorithm in real-time. Two NI-cRIO9076s were deployed as PMUs. Figure~\ref{cRIO} shows the NI-cRIO9081 with an analogue voltage input add-on module connected. The data generated by the Phasor-POD algorithm was sent back to the real-time simulator as an analogue signal. Alternate control hardware can be expected to perform equally well as long as the timing requirements are rigidly enforced.
 
 \subsubsection*{PMUs} Two NI-cRIO9076s were used as PMUs, each with a four-channel, analogue voltage input module and a three-channel, analogue current input module. The inputs to the PMUs were three-phase currents and voltages and a GPS signal for time-synchronisation. PMU software from National Instruments was run on both. Each PMU generated an IEEE C37.118-compliant synchrophasor data stream which was sent over a TCP/IP network. The reporting rate of the PMUs was 50 messages per second hence new measurements were available to the controller every 20 ms. 
 
-Using analogue signals and hardware PMUs allows closely mimicking a real-world deployment scenario. The module ratings were 0-300 V and 0-5 A with 24 bit resolution each\cite{cRIO9081} for the NI9225 and NI9227 respectively. To reduce subsequent computation burden, the PMUs were also configured to compute and report values of active power. The synchrophasor stream from each PMU was sent to a Phasor Data Concentrator (PDC)\cite{SEL} where the streams were time aligned for subsequent use.
+Using analogue signals and hardware PMUs allows for closely mimicking a real-world deployment scenario. The module ratings were 0-300 V and 0-5 A with 24 bit resolution each\cite{cRIO9081} for the NI9225 and NI9227 respectively. To reduce subsequent computation burden, the PMUs were also configured to compute and report values of active power. The synchrophasor stream from each PMU was sent to a Phasor Data Concentrator (PDC)\cite{SEL} where the streams were time aligned for subsequent use.
 
 \subsubsection*{Real-Time Phasor-POD Algorithm} The FPGA of the NI-cRIO9081 was used to run the Phasor-POD algorithm in real-time. Though the NI-cRIO9081 has a real-time micro-processor in addition to the FPGA, the latter was chosen to run the Phasor-POD algorithm. This was because the FPGA runs at 400 MHz and is thus capable of a deterministic response time in the order of nanoseconds. The loop rate chosen was 50 $\mu$s so that the data output rate of the FPGA was identical to the read rate on the real-time simulator's input.
 
@@ -387,7 +411,7 @@ Using an amplified signal as a PMU input greatly improved the signal-to-noise ra
 	%\centering
 	%\label{ExperimentOutline}
 	\includegraphics[width=3.5in]{SVC_ResponseComparison_Labelled.pdf} 
-	\caption{Damping action in inter-area power flow. Blue plot shows maximum damping action possible active power input. Note that improved damping performance is achieved with the HIL controller and wide-area data such as the voltage angle difference.}
+	\caption{Damping action in inter-area power flow. Blue plot shows maximum damping action achievable with active power input. Note that improved damping performance is achieved with the HIL controller and wide-area data such as the voltage angle difference.}
 	\label{HILGraph}
 \end{figure}
 
@@ -395,7 +419,7 @@ A setup identical to that outlined in Figure \ref{ExperimentOutline} was constru
 
 The setup described above is modular enough to allow entire sections to be replaced with their equivalents or removed altogether. The real-time simulator, for example, can be replaced with an actual power system and a controllable device such as an SVC. Even the choice of controllable device is not limited and the control signal generated by the real-time controller can just as well be used to modulate a generator's automatic voltage regulator (AVR) input. In the case where an actual power system is used, the PMU current and voltage inputs should be from CTs and VTs respectively. In the event that only one PMU is used, the PDC becomes redundant and can be removed.\\
 
-Results from the real-time HIL test are presented in Figure~\ref{HILGraph}. The Phasor-POD algorithm running on the cRIO can use a variety of signals extracted (or calculated) from the synchrophasor stream to drive the controller. The inter-area mode is excited at approximately t = 5 s by momentarily changing the voltage reference of one generator in Area 1 before returning it to normal. In both plots in Fig.~\ref{HILGraph}, the SVC provides the only stabilising action to an otherwise unstable \cite{KundurTwoArea} system. The blue plot shows the maximum damping achievable when using active power flow as the input to the POD algorithm. The orange plot shows the damping performance achieved when using the voltage angle difference as a damping input. As evident in Fig.~\ref{HILGraph}, the Phasor-POD algorithm on the cRIO is able to restore the system to stability quicker and with less overshoot. Wide-area signals such as the voltage angle difference between the two areas are essential to achieve improved damping performance.
+Results from the real-time HIL test are presented in Figure~\ref{HILGraph}. The Phasor-POD algorithm running on the cRIO can use a variety of signals extracted (or calculated) from the synchrophasor stream to drive the controller. The inter-area mode is excited at approximately t = 5 s by momentarily changing the voltage reference of one generator in Area 1 before returning it to normal. In both plots in Fig.~\ref{HILGraph}, the SVC provides the only stabilising action to an otherwise unstable \cite{KundurTwoArea} system. The blue plot shows the maximum damping achievable when using active power flow as the input to the POD algorithm. The orange plot shows the damping performance achieved when using the voltage angle difference as a damping input. As evident in Fig.~\ref{HILGraph}, the Phasor-POD algorithm on the cRIO is able to restore the system to stability in both cases presented. Wide-area signals such as the voltage angle difference between the two areas are essential to achieve improved damping performance.
 
 %It should also be noted that the HIL controller runs in a non-ideal environment with measurement noise and delay present and yet, is able to outperform an identical, simulated algorithm.\\
 
@@ -413,6 +437,9 @@ An outline of a generic, real-time, HIL test setup used to test synchrophasor da
 % conference papers do not normally have an appendix
 
 % use section* for acknowledgement
+
+%UNCOMMMENT FOR FINAL VERSION
+
 \section*{Acknowledgement}
 The work of E. Rebello \& M.S. Almas was supported by the STRON$g^{2}$rid project, funded by Nordic Energy Research.\\
 L. Vanfretti is supported by the STRON$g^{2}$rid project, funded by Nordic Energy Research and by Statnett SF, the Norwegian transmission system operator.
@@ -450,39 +477,39 @@ L. Vanfretti is supported by the STRON$g^{2}$rid project, funded by Nordic Energ
 
 \begin{thebibliography}{1}
 
-\bibitem{NAERC} North American Electric Reliability Council \emph{Review of selected 1996 Electric System Disturbances in North America,} August 2002. Available Online: \url{http://www.nerc.com/pa/rrm/ea/System\%20Disturbance\%20Reports20DL/1996SystemDisturbance.pdf}
+\bibitem{NAERC} North American Electric Reliability Council ``Review of selected 1996 Electric System Disturbances in North America" August 2002. Available Online: \url{http://www.nerc.com/pa/rrm/ea/System\%20Disturbance\%20Reports20DL/1996SystemDisturbance.pdf}
 
-\bibitem{WAPODNorway} K. Uhlen, L.~Vanfretti, M.M. De Oliveira, A.B. Leirbukt,V. H. Aarstrand and J. O. Gjerde \emph{Wide-Area Power Oscillation Damper implementation and testing in the Norwegian transmission network} in Power and Energy Society General Meeting, 2012 IEEE pp. 1-7
+\bibitem{WAPODNorway} K. Uhlen, L.~Vanfretti, M.M. De Oliveira, A.B. Leirbukt, V. H. Aarstrand and J. O. Gjerde ``Wide-Area Power Oscillation Damper implementation and testing in the Norwegian transmission network" in Power and Energy Society General Meeting, 2012 IEEE pp. 1-7
 
-\bibitem{Yuwa}  L.~Vanfretti, Y.~Chompoobutrgool, and J.H.~Chow, \emph{Chapter 10: Inter-Area Mode Analysis for Large Power Systems using Synchrophasor Data}, Book Chapter, in Coherency and Model Reduction of Large Power Systems, Joe H. Chow (Ed.), Springer, 2013.
+\bibitem{Yuwa}  L.~Vanfretti, Y.~Chompoobutrgool, and J.H.~Chow, ``Chapter 10: Inter-Area mode analysis for large power systems using synchrophasor data" Book Chapter, in Coherency and Model Reduction of Large Power Systems, Joe H. Chow (Ed.), Springer, 2013.
 
-\bibitem{localREMcomparison}  M. E.~Aboul-Ela, A. A.~Sallam, J. D.~McCalley and A. A.~Fouad, \emph{Damping Controller Design for Power System Oscillations Using Global Signals}, IEEE trans. on Power Systems, Vol. 11, No. 2, May 1996, pp. 767-773
+\bibitem{localREMcomparison}  M. E.~Aboul-Ela, A. A.~Sallam, J. D.~McCalley and A. A.~Fouad, ``Damping controller design for power system oscillations using global signals" IEEE trans. on Power Systems, Vol. 11, No. 2, May 1996, pp. 767-773
 
-\bibitem{WAPODChina} Li Peng and Wu Xiaochen and Lu Chao and Shi Jinghai and Hu Jiong and He Jingbo and Zhao Yong and Aidong Xu \emph{Implementation of CSG's Wide-Area Damping Control System: Overview and experience} in Power Systems Conference and Exposition, 2009. PSCE '09. IEEE/PES pp. 1-9
+\bibitem{WAPODChina} Li Peng and Wu Xiaochen and Lu Chao and Shi Jinghai and Hu Jiong and He Jingbo and Zhao Yong and Aidong Xu ``Implementation of CSG's wide-area damping control system: Overview and experience" in Power Systems Conference and Exposition, 2009. PSCE '09. IEEE/PES pp. 1-9
 
-\bibitem{PhasorPOD} L.~\"{A}ngquist and C.~Gama  \emph{Damping Algorithm based on Phasor Estimation} in Power Engineering Society Winter Meeting, 2001. IEEE, Volume 3, pp. 1160 - 1165
+\bibitem{PhasorPOD} L.~\"{A}ngquist and C.~Gama ``Damping algorithm based on phasor estimation" in Power Engineering Society Winter Meeting, 2001. IEEE, Volume 3, pp. 1160 - 1165
 
-\bibitem{cRIO9081} \emph{Operating Instructions and Specifications Compact RIO NI cRIO-9075/9076 \& NI cRIO-9081/9082}, National Instruments, Available Online at \url{http://www.ni.com/}
+\bibitem{cRIO9081} Operating Instructions and Specifications Compact RIO NI cRIO-9075/9076 \& NI cRIO-9081/9082 National Instruments, Available Online at \url{http://www.ni.com/}
 
-\bibitem{KundurTwoArea} M.~Klein, J. G.~Rogers and P.~Kundur \emph{A fundamental study of inter-area oscillations in Power Systems} IEEE Trans, PWRS, no. 6, pp. 914-921, 1991.
+\bibitem{KundurTwoArea} M.~Klein, J. G.~Rogers and P.~Kundur ``A fundamental study of inter-area oscillations in Power Systems" IEEE Trans, PWRS, no. 6, pp. 914-921, 1991.
 
-\bibitem{Real-Time} Ben-Ari, M., "Principles of Concurrent and Distributed Programming", Prentice Hall, 1990. ISBN 0-13-711821-X. Ch16, Page 164
+\bibitem{Real-Time} Ben-Ari, M., "Principles of concurrent and distributed programming", Prentice Hall, 1990. ISBN 0-13-711821-X. Ch16, pp. 164
 
-\bibitem{Rebello} E. Rebello, L. Vanfretti and M.S Almas \emph{PMU-based Real-Time Damping Control System Software and Hardware Architecture Synthesis and Evaluation} IEEE PES GM, Denver, Colorado, July 2015,
+\bibitem{Rebello} E. Rebello, L. Vanfretti and M.S Almas ``PMU-based real-time damping control system software and hardware architecture synthesis and evaluation" IEEE PES GM, Denver, Colorado, July 2015, in press
 
-\bibitem{TaskForce} M.Crow, M. Gibbard, A. Messina, J. Pierre, J. Sanchez-Gasca, D. Trudnowski, D. Vowles \emph{Identification of Electromechanical Modes in Power Systems} IEEE Task Force Report, Special Publication TP462, June2012.
+\bibitem{TaskForce} M.Crow, M. Gibbard, A. Messina, J. Pierre, J. Sanchez-Gasca, D. Trudnowski, D. Vowles ``Identification of electromechanical modes in power systems" IEEE Task Force Report, Special Publication TP462, June2012
 
-\bibitem{PhasorPODImplement} M.~Shoaib Almas and L.~Vanfretti, \emph{Implementation of Conventional PSS and Phasor Based POD for Power Stabilizing Controls for Real-Time Simulation}, IEEE IES IECON14, 29 Oct-1 Nov, 2014, Dallas, USA.
+\bibitem{PhasorPODImplement} M.~Shoaib Almas and L.~Vanfretti, ``Implementation of conventional PSS and phasor-based POD for power stabilizing controls for real-time simulation" IEEE IES IECON14, 29 Oct-1 Nov, 2014, Dallas, USA.
 
-\bibitem{SmarTSLab} M.S. Almas, M. Baudette, L. Vanfretti, S. Lovlund and J.O. Gjerde "\emph{Synchrophasor network, laboratory and software applications developed in the STRON$g^{2}$rid project}," PES General Meeting, Conference Exposition, July 2014 IEEE pp 1 - 5
+\bibitem{SmarTSLab} M.S. Almas, M. Baudette, L. Vanfretti, S. Lovlund and J.O. Gjerde ``Synchrophasor network, laboratory and software applications developed in the STRON$g^{2}$rid project" PES General Meeting, Conference Exposition, July 2014 IEEE pp 1 - 5
 
 \bibitem{OPALemegasim} eMEGAsim PowerGrid Real-Time Digital Hardware in the Loop Simulator — Opal RT Available Online: \url{http://www.opal-rt.com/}
 
-\bibitem{SEL} SEL SynchroWAVE Phasor Data Concentrator (PDC) Software Available Online at \url{https://www.selinc.com/WorkArea/DownloadAsset.aspx?id=7691} Copyright 2015 Schweitzer Engineering Laboratories, USA
+\bibitem{SEL} SEL SynchroWAVE Phasor Data Concentrator (PDC) Software Available Online at \url{https://www.selinc.com/} Copyright 2015 Schweitzer Engineering Laboratories, USA
 
 \bibitem{Megger} SMRT1 Single Phase Relay Test System Data Sheet, Available Online \url{http://www.megger.com/common/documents/SMRT1_DS_en_V10.pdf} Retreived 22.12.2014, 2014 \textcopyright~Megger
 
-\bibitem{SDK} L. Vanfretti, V.H. Aarstrand, M. Shoaib Almas, V. S. Peri\'c and J.O Gjerde \emph{A Software Development Toolkit for Real-Time Synchrophasor Applications},  IEEE PES Grenoble PowerTech, 2013
+\bibitem{SDK} L. Vanfretti, V.H. Aarstrand, M. Shoaib Almas, V. S. Peri\'c and J.O Gjerde ``A Software development toolkit for real-time synchrophasor applications"  IEEE PES Grenoble PowerTech, 2013
 
 %\bibitem{PMUMario} M. Paolone, A. Borghetti, C. A. Nucci, \emph{A Synchrophasor Estimation Algorithm for the Monitoring of Active Distribution Networks in Steady State and Transient Conditions}, Proc. of the 17th Power Systems Computation Conference (PSCC 2011), Stockholm, Sweden, Aug. 22-26, 2011 
 
